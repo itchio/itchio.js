@@ -1,6 +1,6 @@
 import { ajax, RequestParameters } from "nanoajax";
 
-type RequestResult = {
+export type RequestResult = {
   statusCode: number;
   responseText: string;
   request: XMLHttpRequest;

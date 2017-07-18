@@ -16,7 +16,7 @@ declare var process: any;
 const defaultRootUrl = "https://itch.io";
 const defaultScope = "profile:me";
 
-class API {
+export class API {
   async getClient(userOpts: Partial<IGetClientOpts> = {}): Promise<Client> {
     const opts: IGetClientOpts = {
       rootUrl: userOpts.rootUrl || defaultRootUrl,
